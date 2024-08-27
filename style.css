@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1b1b1b, #313131);
+    color: white;
+}
+
+.headLine2 {
+    margin-top: 35px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #fff;
+    background: -webkit-linear-gradient(#ff512f, #dd2476);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.img {
+   
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    object-fit: cover;
+    width: 165px;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(2px 4px 6px black);
+    object-fit: cover;
+}
+
+.img:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+.img:active {
+    transform: scale(0.9);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .headLine2 {
+        font-size: 2rem;
+    }
+
+    .img img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.scorecard{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    gap: 3rem;
+    font-size: 20px;
+}
+
+.yourscore, .compscore{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+
+.msg{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#abc {
+    display: flex;
+    justify-content: center;
+    background-color: #ff512f;
+    max-width: 20vw;
+    margin: auto;
+    margin-top: 25px;
+    padding: 8px 0px;
+    font-weight: bold;
+    font-size: 1.2rem; /* Slightly increased font size */
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added box shadow for depth */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    text-align: center;
+}
+
+#abc:hover {
+    transform: scale(1.05); /* Slight scale-up on hover */
+    background-color: #ff785a; /* Lighten the background on hover */
+}
+
+.msg_container {
+    margin-top: 40px;
+    margin: auto;
+    background-color: #7a2448;
+    max-width: 20vw;
+    padding: 10px; /* Added padding for a cleaner look */
+    font-size: 1.1rem; /* Slightly increased font size for readability */
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added box shadow for depth */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.msg_container:hover {
+    transform: scale(1.05); /* Slight scale-up on hover */
+    background-color: #8a3d5e; /* Lighten the background on hover */
+}
+
+@media (max-width: 768px) {
+    .compselection, .msg_container {
+        max-width: 90vw; /* Full width for smaller screens */
+        font-size: 1rem; /* Adjusted font size for readability on mobile */
+    }
+}
+
+.hide{
+    display: none;
+}
